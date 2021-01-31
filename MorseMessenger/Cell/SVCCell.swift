@@ -7,22 +7,27 @@
 
 import UIKit
 protocol SVCCellDelegate {
-    func buttonPressed()
+    func buttonPressed(message:String)
 }
 class SVCCell:UITableViewCell{
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var identifierLabel: UILabel!
+    
     var delegate:SVCCellDelegate?
     
-    var cellText = "what"{
+    var identifier = "id"{
         didSet{
-            button.setTitle(cellText, for: .normal)
+            identifierLabel.text = identifier
         }
     }
+    var message:String?
+    
     override func prepareForReuse() {
-        cellText=""
+        identifier=""
     }
     @IBAction func buttonOnClick(_ sender: Any) {
-        delegate?.buttonPressed()
+        guard let message = message else { return }
+        delegate?.buttonPressed(message:message)
         print("hello")
     }
     

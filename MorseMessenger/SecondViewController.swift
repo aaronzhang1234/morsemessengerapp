@@ -41,32 +41,6 @@ class SecondViewController:UIViewController{
         "X": "-..-",
         "Y": "-.--",
         "Z": "--..",
-        "a": ".-",
-        "b": "-...",
-        "c": "-.-.",
-        "d": "-..",
-        "e": ".",
-        "f": "..-.",
-        "g": "--.",
-        "h": "....",
-        "i": "..",
-        "j": ".---",
-        "k": "-.-",
-        "l": ".-..",
-        "m": "--",
-        "n": "-.",
-        "o": "---",
-        "p": ".--.",
-        "q": "--.-",
-        "r": ".-.",
-        "s": "...",
-        "t": "-",
-        "u": "..-",
-        "v": "...-",
-        "w": ".--",
-        "x": "-..-",
-        "y": "-.--",
-        "z": "--..",
         "1": ".----",
         "2": "..---",
         "3": "...--",
@@ -86,7 +60,7 @@ class SecondViewController:UIViewController{
     var engine: CHHapticEngine?
 
     
-    var tableViewRows:[String] = []{
+    var tableViewRows:[MorseCell] = []{
         didSet{
             tableview.reloadData()
         }
@@ -140,7 +114,7 @@ class SecondViewController:UIViewController{
         let pusher_message = pusherResponse.message
         print(pusher_message)
         let message_array = pusher_message.components(separatedBy: "|")
-        self.vibrateMessage(message_array[1])
+        tableViewRows.append(MorseCell(identifer: message_array[0], message: message_array[1]))
     }
     
     func vibrateMessage(_ message: String){
@@ -182,15 +156,20 @@ extension SecondViewController:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? SVCCell else{return UITableViewCell()}
+        let currentCell = tableViewRows[indexPath.row]
         cell.delegate = self
-        cell.cellText = tableViewRows[indexPath.row]
+        cell.message = currentCell.message
+        cell.identifier = currentCell.identifer
         return cell
     }
-    
-    
 }
 extension SecondViewController:SVCCellDelegate{
-    func buttonPressed() {
-        print("hello svc")
+    func buttonPressed(message:String) {
+        vibrateMessage(message)
     }
+}
+
+struct MorseCell{
+    var identifer:String
+    var message:String
 }

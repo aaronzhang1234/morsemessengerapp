@@ -22,14 +22,24 @@
                             <action selector="buttonOnClick:" destination="3Lb-2A-Y85" eventType="touchUpInside" id="ujr-dd-jig"/>
                         </connections>
                     </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vao-Gu-3TM">
+                        <rect key="frame" x="41" y="11" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="vao-Gu-3TM" firstAttribute="height" secondItem="TvI-yX-lE1" secondAttribute="height" multiplier="0.477273" id="Ts7-5O-TTd"/>
+                    <constraint firstItem="vao-Gu-3TM" firstAttribute="leading" secondItem="TvI-yX-lE1" secondAttribute="leading" constant="41" id="YkR-4o-NVS"/>
+                    <constraint firstItem="vao-Gu-3TM" firstAttribute="top" secondItem="TvI-yX-lE1" secondAttribute="top" constant="11" id="dgM-Lj-20f"/>
                     <constraint firstItem="lXK-TC-vL5" firstAttribute="centerX" secondItem="TvI-yX-lE1" secondAttribute="centerX" id="hjM-zg-sDb"/>
                     <constraint firstItem="lXK-TC-vL5" firstAttribute="centerY" secondItem="TvI-yX-lE1" secondAttribute="centerY" id="pZC-JA-dya"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="button" destination="lXK-TC-vL5" id="lok-kK-rQo"/>
+                <outlet property="identifierLabel" destination="vao-Gu-3TM" id="Sn0-iN-3j2"/>
             </connections>
             <point key="canvasLocation" x="317" y="74"/>
         </tableViewCell>
