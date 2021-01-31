@@ -1,0 +1,6 @@
+framework module Pods_MorseMessenger_MorseMessengerUITests {
+  umbrella header "Pods-MorseMessenger-MorseMessengerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

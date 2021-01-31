@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2665ADAAF6B6F32D47D98AF1 /* Pods_MorseMessengerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C828EF7F32AC05036A0E832 /* Pods_MorseMessengerTests.framework */; };
+		75170677E6842264E8F2EE68 /* Pods_MorseMessenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C487AA05D655E59DB3F24FCC /* Pods_MorseMessenger.framework */; };
+		7D0C50FB4C400B3827B4FB31 /* Pods_MorseMessenger_MorseMessengerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE519C23310F5B22137D52CC /* Pods_MorseMessenger_MorseMessengerUITests.framework */; };
 		AD37691225C6356800BE9F0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37691125C6356800BE9F0E /* AppDelegate.swift */; };
 		AD37691425C6356800BE9F0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37691325C6356800BE9F0E /* SceneDelegate.swift */; };
 		AD37691625C6356800BE9F0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37691525C6356800BE9F0E /* ViewController.swift */; };
@@ -15,6 +18,9 @@
 		AD37691E25C6357300BE9F0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD37691C25C6357300BE9F0E /* LaunchScreen.storyboard */; };
 		AD37692925C6357400BE9F0E /* MorseMessengerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37692825C6357400BE9F0E /* MorseMessengerTests.swift */; };
 		AD37693425C6357400BE9F0E /* MorseMessengerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37693325C6357400BE9F0E /* MorseMessengerUITests.swift */; };
+		AD37694525C6411E00BE9F0E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37694425C6411E00BE9F0E /* SecondViewController.swift */; };
+		AD37695325C64FAB00BE9F0E /* SVCCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD37695225C64FAB00BE9F0E /* SVCCell.xib */; };
+		AD37695825C64FF700BE9F0E /* SVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37695725C64FF700BE9F0E /* SVCCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2CFE5E852F330B98CE35E2C1 /* Pods-MorseMessengerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MorseMessengerTests.release.xcconfig"; path = "Target Support Files/Pods-MorseMessengerTests/Pods-MorseMessengerTests.release.xcconfig"; sourceTree = "<group>"; };
+		3DA1A2B5E4A28053F9526D96 /* Pods-MorseMessenger-MorseMessengerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MorseMessenger-MorseMessengerUITests.release.xcconfig"; path = "Target Support Files/Pods-MorseMessenger-MorseMessengerUITests/Pods-MorseMessenger-MorseMessengerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		799A57546FBD3137C3037018 /* Pods-MorseMessengerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MorseMessengerTests.debug.xcconfig"; path = "Target Support Files/Pods-MorseMessengerTests/Pods-MorseMessengerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7C828EF7F32AC05036A0E832 /* Pods_MorseMessengerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MorseMessengerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		967BE30B1072041AD29516EC /* Pods-MorseMessenger-MorseMessengerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MorseMessenger-MorseMessengerUITests.debug.xcconfig"; path = "Target Support Files/Pods-MorseMessenger-MorseMessengerUITests/Pods-MorseMessenger-MorseMessengerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AD37690E25C6356800BE9F0E /* MorseMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorseMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD37691125C6356800BE9F0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD37691325C6356800BE9F0E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +60,13 @@
 		AD37692F25C6357400BE9F0E /* MorseMessengerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MorseMessengerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD37693325C6357400BE9F0E /* MorseMessengerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorseMessengerUITests.swift; sourceTree = "<group>"; };
 		AD37693525C6357400BE9F0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD37694425C6411E00BE9F0E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		AD37695225C64FAB00BE9F0E /* SVCCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SVCCell.xib; sourceTree = "<group>"; };
+		AD37695725C64FF700BE9F0E /* SVCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVCCell.swift; sourceTree = "<group>"; };
+		C487AA05D655E59DB3F24FCC /* Pods_MorseMessenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MorseMessenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFBC32DA39FFD6BEC49049DE /* Pods-MorseMessenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MorseMessenger.release.xcconfig"; path = "Target Support Files/Pods-MorseMessenger/Pods-MorseMessenger.release.xcconfig"; sourceTree = "<group>"; };
+		DE519C23310F5B22137D52CC /* Pods_MorseMessenger_MorseMessengerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MorseMessenger_MorseMessengerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF6DD4973497AC81D3679A2 /* Pods-MorseMessenger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MorseMessenger.debug.xcconfig"; path = "Target Support Files/Pods-MorseMessenger/Pods-MorseMessenger.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75170677E6842264E8F2EE68 /* Pods_MorseMessenger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2665ADAAF6B6F32D47D98AF1 /* Pods_MorseMessengerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +90,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D0C50FB4C400B3827B4FB31 /* Pods_MorseMessenger_MorseMessengerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		386744A872798677AC840DB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C487AA05D655E59DB3F24FCC /* Pods_MorseMessenger.framework */,
+				DE519C23310F5B22137D52CC /* Pods_MorseMessenger_MorseMessengerUITests.framework */,
+				7C828EF7F32AC05036A0E832 /* Pods_MorseMessengerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78F3C522594EEB76D35C5001 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FAF6DD4973497AC81D3679A2 /* Pods-MorseMessenger.debug.xcconfig */,
+				CFBC32DA39FFD6BEC49049DE /* Pods-MorseMessenger.release.xcconfig */,
+				967BE30B1072041AD29516EC /* Pods-MorseMessenger-MorseMessengerUITests.debug.xcconfig */,
+				3DA1A2B5E4A28053F9526D96 /* Pods-MorseMessenger-MorseMessengerUITests.release.xcconfig */,
+				799A57546FBD3137C3037018 /* Pods-MorseMessengerTests.debug.xcconfig */,
+				2CFE5E852F330B98CE35E2C1 /* Pods-MorseMessengerTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AD37690525C6356600BE9F0E = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +128,8 @@
 				AD37692725C6357400BE9F0E /* MorseMessengerTests */,
 				AD37693225C6357400BE9F0E /* MorseMessengerUITests */,
 				AD37690F25C6356800BE9F0E /* Products */,
+				78F3C522594EEB76D35C5001 /* Pods */,
+				386744A872798677AC840DB3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +146,7 @@
 		AD37691025C6356800BE9F0E /* MorseMessenger */ = {
 			isa = PBXGroup;
 			children = (
+				AD37694925C64D9500BE9F0E /* Cell */,
 				AD37691125C6356800BE9F0E /* AppDelegate.swift */,
 				AD37691325C6356800BE9F0E /* SceneDelegate.swift */,
 				AD37691525C6356800BE9F0E /* ViewController.swift */,
@@ -106,6 +154,7 @@
 				AD37691A25C6357300BE9F0E /* Assets.xcassets */,
 				AD37691C25C6357300BE9F0E /* LaunchScreen.storyboard */,
 				AD37691F25C6357300BE9F0E /* Info.plist */,
+				AD37694425C6411E00BE9F0E /* SecondViewController.swift */,
 			);
 			path = MorseMessenger;
 			sourceTree = "<group>";
@@ -128,6 +177,15 @@
 			path = MorseMessengerUITests;
 			sourceTree = "<group>";
 		};
+		AD37694925C64D9500BE9F0E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AD37695225C64FAB00BE9F0E /* SVCCell.xib */,
+				AD37695725C64FF700BE9F0E /* SVCCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +193,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD37693825C6357400BE9F0E /* Build configuration list for PBXNativeTarget "MorseMessenger" */;
 			buildPhases = (
+				A4BD6BFF772B0DC4E2510575 /* [CP] Check Pods Manifest.lock */,
 				AD37690A25C6356800BE9F0E /* Sources */,
 				AD37690B25C6356800BE9F0E /* Frameworks */,
 				AD37690C25C6356800BE9F0E /* Resources */,
+				EE351193740C8729A71C74EA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +212,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD37693B25C6357400BE9F0E /* Build configuration list for PBXNativeTarget "MorseMessengerTests" */;
 			buildPhases = (
+				BB137D447AFB881297229A9B /* [CP] Check Pods Manifest.lock */,
 				AD37692025C6357400BE9F0E /* Sources */,
 				AD37692125C6357400BE9F0E /* Frameworks */,
 				AD37692225C6357400BE9F0E /* Resources */,
@@ -170,9 +231,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD37693E25C6357400BE9F0E /* Build configuration list for PBXNativeTarget "MorseMessengerUITests" */;
 			buildPhases = (
+				176A1D3A893147C4BABFA1C9 /* [CP] Check Pods Manifest.lock */,
 				AD37692B25C6357400BE9F0E /* Sources */,
 				AD37692C25C6357400BE9F0E /* Frameworks */,
 				AD37692D25C6357400BE9F0E /* Resources */,
+				148617D8CE68397B09251C36 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,6 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD37695325C64FAB00BE9F0E /* SVCCell.xib in Resources */,
 				AD37691E25C6357300BE9F0E /* LaunchScreen.storyboard in Resources */,
 				AD37691B25C6357300BE9F0E /* Assets.xcassets in Resources */,
 				AD37691925C6356900BE9F0E /* Main.storyboard in Resources */,
@@ -253,12 +317,117 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		148617D8CE68397B09251C36 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MorseMessenger-MorseMessengerUITests/Pods-MorseMessenger-MorseMessengerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MorseMessenger-MorseMessengerUITests/Pods-MorseMessenger-MorseMessengerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MorseMessenger-MorseMessengerUITests/Pods-MorseMessenger-MorseMessengerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		176A1D3A893147C4BABFA1C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MorseMessenger-MorseMessengerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4BD6BFF772B0DC4E2510575 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MorseMessenger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB137D447AFB881297229A9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MorseMessengerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE351193740C8729A71C74EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MorseMessenger/Pods-MorseMessenger-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MorseMessenger/Pods-MorseMessenger-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MorseMessenger/Pods-MorseMessenger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AD37690A25C6356800BE9F0E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD37694525C6411E00BE9F0E /* SecondViewController.swift in Sources */,
 				AD37691625C6356800BE9F0E /* ViewController.swift in Sources */,
+				AD37695825C64FF700BE9F0E /* SVCCell.swift in Sources */,
 				AD37691225C6356800BE9F0E /* AppDelegate.swift in Sources */,
 				AD37691425C6356800BE9F0E /* SceneDelegate.swift in Sources */,
 			);
@@ -433,6 +602,7 @@
 		};
 		AD37693925C6357400BE9F0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAF6DD4973497AC81D3679A2 /* Pods-MorseMessenger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,6 +621,7 @@
 		};
 		AD37693A25C6357400BE9F0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFBC32DA39FFD6BEC49049DE /* Pods-MorseMessenger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -469,6 +640,7 @@
 		};
 		AD37693C25C6357400BE9F0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 799A57546FBD3137C3037018 /* Pods-MorseMessengerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +662,7 @@
 		};
 		AD37693D25C6357400BE9F0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CFE5E852F330B98CE35E2C1 /* Pods-MorseMessengerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +684,7 @@
 		};
 		AD37693F25C6357400BE9F0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 967BE30B1072041AD29516EC /* Pods-MorseMessenger-MorseMessengerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +704,7 @@
 		};
 		AD37694025C6357400BE9F0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DA1A2B5E4A28053F9526D96 /* Pods-MorseMessenger-MorseMessengerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

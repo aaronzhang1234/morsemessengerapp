@@ -1,0 +1,1510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00740BB275FA3071BAB13645091D4908 /* PusherCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664E5054A3E9EC37DCDA41ABD017EA32 /* PusherCrypto.swift */; };
+		05F7007BE39BF9F1FCFAC68D406236BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E679C401603F3A84E5551FEB5F52D519 /* Foundation.framework */; };
+		0AC6AE69852071D56085AF67C1782795 /* TweetNacl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77099136AECCB5F19CB088FE9C9EEE25 /* TweetNacl.swift */; };
+		0B0E7AA4A658ADF10F1A7CB3D67B465D /* PusherEventQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120133D5A15F5246DC27122E4BDBFEE7 /* PusherEventQueue.swift */; };
+		118E15E4CDF36489FB36C52DED11FA90 /* WebSocketConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF893B00C1763473D3CB893BF57377 /* WebSocketConnection.swift */; };
+		132557987F5994C3776ADB572DA6B359 /* PusherClientOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3C97C5DFF564734BFAF6AE4E743ECA /* PusherClientOptions.swift */; };
+		1A3A703A83292097DBFBF208BA534A41 /* Authorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0E0D08EA0ADFD70AAEFD6D01FDDEF1 /* Authorizer.swift */; };
+		1C6DEAAB927399629C6A5271F9DD5177 /* ObjectiveC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDB27A2D226062039FF181B9F25B71B /* ObjectiveC.swift */; };
+		1E8BD86D820D065287C0D5B9C6D82AEF /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF94CA0E4D42F83C55A72F439032CFA /* Constant.swift */; };
+		2BF95C73FE2B62812870B438D2B5D148 /* PusherParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595B3DEBECBE661081B6C567F63B750E /* PusherParser.swift */; };
+		36CE0AB9581452B11BA84B71B0A18E7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E679C401603F3A84E5551FEB5F52D519 /* Foundation.framework */; };
+		39BDCE263118D091FA7B88A62B698A2A /* NWConnection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3236E37A26C959A5D8C50451B8C5192C /* NWConnection+Extension.swift */; };
+		403C21A19FB94FB679CA6134EEB7ABB7 /* Pods-MorseMessengerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C0F85B226FF0EE9C84D36E9F6B0266 /* Pods-MorseMessengerTests-dummy.m */; };
+		4AE2F13D5DF536A17A201CF1A36C0DAD /* Pods-MorseMessenger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D00C071D910A3C4D4C7F60DDF42FB /* Pods-MorseMessenger-dummy.m */; };
+		57A977C0072D7CA7B2B62D72FF9E4866 /* ctweetnacl.h in Headers */ = {isa = PBXBuildFile; fileRef = B1156FBA003A155B4A75F484F5C75355 /* ctweetnacl.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		5C0698936D6F8304402AE4CA62B78F04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E679C401603F3A84E5551FEB5F52D519 /* Foundation.framework */; };
+		67C36BDCE5256A8B9A1BB64F3D8017E4 /* TweetNacl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D97D147F3966003954A3D18689BEFB /* TweetNacl-dummy.m */; };
+		696233CF6BD0D0CC32080191319C34BA /* TweetNacl.h in Headers */ = {isa = PBXBuildFile; fileRef = 20AAB686F1114FF8C8BEC86DF0B5C148 /* TweetNacl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C9742F5B2371501E87E659C43D1252A /* PusherDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8679B2433707A4263EBF799F59113D2F /* PusherDelegate.swift */; };
+		6FA2676B986069EAC5142FB9291F037F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E679C401603F3A84E5551FEB5F52D519 /* Foundation.framework */; };
+		7941E438492F18D68B961EF329F97B0C /* PusherChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ED953C7489AC82D9D65B93E6968F4D /* PusherChannel.swift */; };
+		7AF8BAFC4017CE4F9E7BBB5358DAA076 /* PusherSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 38F3B4098480C694C3E8D4B6D0142014 /* PusherSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		814A082DF742454C0A92778C239DAC02 /* PusherDecryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF4E7DC3410FF96F908FE2F01D3AAD /* PusherDecryptor.swift */; };
+		851120B685CCAB8075B718E778B69CB7 /* PusherConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39C05CF0A3430E62DCCE2D49B1AA90F /* PusherConnection.swift */; };
+		880850D6324C49B603D68A948CE32DF4 /* PusherGlobalChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9326F1C82CE08C96EE83732394670B /* PusherGlobalChannel.swift */; };
+		8AAD33A93EFEC71C056D7454992B1E6C /* PusherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E37615534057E7F45D7AD18BA2A8A52 /* PusherError.swift */; };
+		8B9112EE5680095C49AA0E8757A6537E /* Pods-MorseMessenger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 683E080B0B2AC7927C7A22EF0F7A9011 /* Pods-MorseMessenger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C0AF72D95C03E32492116F9A99A5DA2 /* NWWebSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A54F4559CC4FBF57EC7B80573812E9AA /* NWWebSocket-dummy.m */; };
+		908CBA96EA99ECB4646FA4D8A12EC3F6 /* PusherWebsocketDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA0001D9BBE702E52FB7DE66F8F1533 /* PusherWebsocketDelegate.swift */; };
+		90AE25F7890A0DA2AFE7B8A0C4FD2CE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E679C401603F3A84E5551FEB5F52D519 /* Foundation.framework */; };
+		93F4B884B56FF9F3F089213D5BF6C955 /* Pods-MorseMessenger-MorseMessengerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 24059955A29D75CD00D3D5A412A7E4A5 /* Pods-MorseMessenger-MorseMessengerUITests-dummy.m */; };
+		94CC94410B5721521ED5798E5CB1BF4C /* ctweetnacl.c in Sources */ = {isa = PBXBuildFile; fileRef = 2391E04945869FE7ECDC1CA3A7B68CD4 /* ctweetnacl.c */; };
+		A04FB27DA0D8FC7EA3BD4B1B8FEF7D3A /* PusherSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7656604F224BD1F868374B5B18ED8798 /* PusherSwift.swift */; };
+		A2CC6F2BB41950FDC261C05059722301 /* TweetNacl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CB5C33F98BF25AD09B4BE7D37083BAB /* TweetNacl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5D3CBA4E4966A77973567877BFEE840 /* NWWebSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D08754D25AA68B6DB1AE4340DA36F9E /* NWWebSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A83423EF65A2057A78F5348942F82055 /* AuthRequestBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D4635030D4EDF3472D366A4D0804A0 /* AuthRequestBuilderProtocol.swift */; };
+		AC90F9F6C301DF527FE48F68CC4DFE5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E679C401603F3A84E5551FEB5F52D519 /* Foundation.framework */; };
+		B53767458896BDEB7E6E9F52A20E5F46 /* PusherEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B188FE3993B15EED19011CCD786D3787 /* PusherEvent.swift */; };
+		B643DA3207E18491EEDF626700BDAE41 /* PusherPresenceChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1468A3B42B58583067987DA1D00E9F42 /* PusherPresenceChannel.swift */; };
+		C6DF6CCDBAA4B6491C91C882A153B1AB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6D48C1777F6A3A34CD321B23AC49C2 /* Constants.swift */; };
+		C76FB90F9CDFADED9FD2DD2F8AABB961 /* NWWebSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF14EADA73F325D21D9E221635C1F490 /* NWWebSocket.framework */; };
+		CF91A91C474EF33B17FA2346266CF868 /* PusherSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2728809FC4357DA3818CFB635EC7D98D /* PusherSwift-dummy.m */; };
+		E22D8F2F45C15FE1D869D6C5789F7CEB /* Pods-MorseMessengerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 62090B21383ED58CB3F0D205BAE798DC /* Pods-MorseMessengerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E57D6CFF98F00B88E75CD5853E48E8BF /* Pods-MorseMessenger-MorseMessengerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 989532E8D8A06A3FE55C11A77818B9A8 /* Pods-MorseMessenger-MorseMessengerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E721760EFAEBF142E64F0F85B19AAFE6 /* PusherEncryptionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420DD1FC0E728BA60885966B0406EC83 /* PusherEncryptionHelpers.swift */; };
+		EBC03C22A1441458676A886CD1E144DC /* PusherChannelsProtocolCloseCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03164AC06FCB027BFB457AEB5E05D73B /* PusherChannelsProtocolCloseCode.swift */; };
+		EC01F5D34C26321560F7DBD29B0DB72D /* TweetNacl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ACEB22F8A7889FC098EC16859C42517 /* TweetNacl.framework */; };
+		EEFECE3FE4F507E6088995B3D66BB63E /* NWWebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E961B902F1FB4D6CC0A8FFB85AFA03A /* NWWebSocket.swift */; };
+		F19832555DCC8AC123310CC4CE429E53 /* PusherChannels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C3F5A281F73CF71C2C25CAF17FB97F /* PusherChannels.swift */; };
+		FEF1DC287DF75725E9A6FCE9EC87F893 /* PusherLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE50081DEF2B81DB645C49ED2DCCD12 /* PusherLogger.swift */; };
+		FF71ACC0BF0834BD13F50013B25C4AE9 /* PusherEventFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC415BFFBEAF01C525F357989FD618F /* PusherEventFactory.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		243E500FE7BDA0CD50A9A964D901CB15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4921D5B9FFDABBEE3823ABC7E8DAA736;
+			remoteInfo = PusherSwift;
+		};
+		25ACA99207FF71E140B9386EBEE4CDA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4921D5B9FFDABBEE3823ABC7E8DAA736;
+			remoteInfo = PusherSwift;
+		};
+		31D59B1D3E367372786EC36AAEAD85BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95C1A3B2D9F3790A9019BEDD61991ED3;
+			remoteInfo = "Pods-MorseMessenger";
+		};
+		69A1286726354B88D57AC6C93A33DA6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E058628796F895302820DFBD58DCEDAC;
+			remoteInfo = TweetNacl;
+		};
+		93FAF01ABCB807DBB3C5FDE4C7064E85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E058628796F895302820DFBD58DCEDAC;
+			remoteInfo = TweetNacl;
+		};
+		9B247F4E75ADEAD1E6E82DF945D4F595 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C8677E8CA51138111F0D17125A79694;
+			remoteInfo = NWWebSocket;
+		};
+		B12D1CFB9F4C28C374D6A09D68468EB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E058628796F895302820DFBD58DCEDAC;
+			remoteInfo = TweetNacl;
+		};
+		D2F5BF23B15B198B80A46B6BA8D5E897 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C8677E8CA51138111F0D17125A79694;
+			remoteInfo = NWWebSocket;
+		};
+		F4778F7CB923B7389B336CEB3D44965B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C8677E8CA51138111F0D17125A79694;
+			remoteInfo = NWWebSocket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03164AC06FCB027BFB457AEB5E05D73B /* PusherChannelsProtocolCloseCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherChannelsProtocolCloseCode.swift; path = Sources/Models/PusherChannelsProtocolCloseCode.swift; sourceTree = "<group>"; };
+		04564105300EF4F206AA5DE55C698AF9 /* NWWebSocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NWWebSocket.release.xcconfig; sourceTree = "<group>"; };
+		0496376BC6FE200C9FE20096F3449312 /* NWWebSocket-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NWWebSocket-Info.plist"; sourceTree = "<group>"; };
+		0B32C323CD918E74390113D283732BDC /* PusherSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PusherSwift.framework; path = PusherSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CAF4E7DC3410FF96F908FE2F01D3AAD /* PusherDecryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherDecryptor.swift; path = Sources/Services/PusherDecryptor.swift; sourceTree = "<group>"; };
+		0E37615534057E7F45D7AD18BA2A8A52 /* PusherError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherError.swift; path = Sources/Models/PusherError.swift; sourceTree = "<group>"; };
+		0E4AD90BE52EDB80B27419E8BA6B4459 /* NWWebSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NWWebSocket-prefix.pch"; sourceTree = "<group>"; };
+		120133D5A15F5246DC27122E4BDBFEE7 /* PusherEventQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherEventQueue.swift; path = Sources/Services/PusherEventQueue.swift; sourceTree = "<group>"; };
+		138F27179E4BC6AD0810B3AA1B840985 /* Pods-MorseMessengerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MorseMessengerTests.modulemap"; sourceTree = "<group>"; };
+		13C686C5CBDDEBBFD68895D9A713EEF5 /* TweetNacl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TweetNacl.debug.xcconfig; sourceTree = "<group>"; };
+		1468A3B42B58583067987DA1D00E9F42 /* PusherPresenceChannel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherPresenceChannel.swift; path = Sources/Models/PusherPresenceChannel.swift; sourceTree = "<group>"; };
+		18C0F85B226FF0EE9C84D36E9F6B0266 /* Pods-MorseMessengerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MorseMessengerTests-dummy.m"; sourceTree = "<group>"; };
+		1E6BFABD497773A865256CDC6F03F8E2 /* Pods-MorseMessenger-MorseMessengerUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MorseMessenger-MorseMessengerUITests.modulemap"; sourceTree = "<group>"; };
+		20AAB686F1114FF8C8BEC86DF0B5C148 /* TweetNacl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TweetNacl.h; path = Sources/TweetNacl/TweetNacl.h; sourceTree = "<group>"; };
+		227571295BC444E87B73B49A606CB722 /* TweetNacl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TweetNacl.release.xcconfig; sourceTree = "<group>"; };
+		2320CC0CCAF87040A7DC6B1592BABBF4 /* Pods-MorseMessengerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MorseMessengerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2391E04945869FE7ECDC1CA3A7B68CD4 /* ctweetnacl.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ctweetnacl.c; path = Sources/CTweetNacl/ctweetnacl.c; sourceTree = "<group>"; };
+		24059955A29D75CD00D3D5A412A7E4A5 /* Pods-MorseMessenger-MorseMessengerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MorseMessenger-MorseMessengerUITests-dummy.m"; sourceTree = "<group>"; };
+		24AEEFD7F8902438FC85F24BE7C9FA62 /* PusherSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PusherSwift.debug.xcconfig; sourceTree = "<group>"; };
+		2728809FC4357DA3818CFB635EC7D98D /* PusherSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PusherSwift-dummy.m"; sourceTree = "<group>"; };
+		2B3C97C5DFF564734BFAF6AE4E743ECA /* PusherClientOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherClientOptions.swift; path = Sources/Models/PusherClientOptions.swift; sourceTree = "<group>"; };
+		2FC415BFFBEAF01C525F357989FD618F /* PusherEventFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherEventFactory.swift; path = Sources/Helpers/PusherEventFactory.swift; sourceTree = "<group>"; };
+		317CDB3617AE7CFBD3C9B5B901F8F543 /* TweetNacl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TweetNacl.framework; path = TweetNacl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3236E37A26C959A5D8C50451B8C5192C /* NWConnection+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NWConnection+Extension.swift"; path = "Sources/NWWebSocket/Extension/NWConnection+Extension.swift"; sourceTree = "<group>"; };
+		35A3761075592476BE8DC05B65596222 /* Pods_MorseMessenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MorseMessenger.framework; path = "Pods-MorseMessenger.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38F3B4098480C694C3E8D4B6D0142014 /* PusherSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PusherSwift-umbrella.h"; sourceTree = "<group>"; };
+		3AEF893B00C1763473D3CB893BF57377 /* WebSocketConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocketConnection.swift; path = Sources/NWWebSocket/Protocol/WebSocketConnection.swift; sourceTree = "<group>"; };
+		3BA0001D9BBE702E52FB7DE66F8F1533 /* PusherWebsocketDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherWebsocketDelegate.swift; path = Sources/Extensions/PusherWebsocketDelegate.swift; sourceTree = "<group>"; };
+		3CB5C33F98BF25AD09B4BE7D37083BAB /* TweetNacl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TweetNacl-umbrella.h"; sourceTree = "<group>"; };
+		41156363BC2EDE1CDE08102DB6EC6798 /* Pods-MorseMessenger-MorseMessengerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MorseMessenger-MorseMessengerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		420DD1FC0E728BA60885966B0406EC83 /* PusherEncryptionHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherEncryptionHelpers.swift; path = Sources/Helpers/PusherEncryptionHelpers.swift; sourceTree = "<group>"; };
+		42C3F5A281F73CF71C2C25CAF17FB97F /* PusherChannels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherChannels.swift; path = Sources/Models/PusherChannels.swift; sourceTree = "<group>"; };
+		435AFD4E4D9890817ECC37A439A3A878 /* Pods-MorseMessengerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MorseMessengerTests.release.xcconfig"; sourceTree = "<group>"; };
+		4925080529093815246F5DD140ABF342 /* Pods-MorseMessenger-MorseMessengerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MorseMessenger-MorseMessengerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4D08754D25AA68B6DB1AE4340DA36F9E /* NWWebSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NWWebSocket-umbrella.h"; sourceTree = "<group>"; };
+		558393595FA1923A28425F86306E65F3 /* Pods_MorseMessengerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MorseMessengerTests.framework; path = "Pods-MorseMessengerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58A49A8426D52C9A7FE03E6C9DC7C212 /* PusherSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PusherSwift.release.xcconfig; sourceTree = "<group>"; };
+		595B3DEBECBE661081B6C567F63B750E /* PusherParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherParser.swift; path = Sources/Helpers/PusherParser.swift; sourceTree = "<group>"; };
+		5C1CECB06E94B58328F73B2383723E6B /* Pods-MorseMessenger-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MorseMessenger-acknowledgements.markdown"; sourceTree = "<group>"; };
+		61B29154794282D2DC85887D9BE2EF8A /* NWWebSocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NWWebSocket.debug.xcconfig; sourceTree = "<group>"; };
+		62090B21383ED58CB3F0D205BAE798DC /* Pods-MorseMessengerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MorseMessengerTests-umbrella.h"; sourceTree = "<group>"; };
+		664E5054A3E9EC37DCDA41ABD017EA32 /* PusherCrypto.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherCrypto.swift; path = Sources/Helpers/PusherCrypto.swift; sourceTree = "<group>"; };
+		683E080B0B2AC7927C7A22EF0F7A9011 /* Pods-MorseMessenger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MorseMessenger-umbrella.h"; sourceTree = "<group>"; };
+		6ACEB22F8A7889FC098EC16859C42517 /* TweetNacl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TweetNacl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7479C4E1E0DB2386A57755A01485ADAA /* TweetNacl-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TweetNacl-Info.plist"; sourceTree = "<group>"; };
+		7656604F224BD1F868374B5B18ED8798 /* PusherSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherSwift.swift; path = Sources/PusherSwift.swift; sourceTree = "<group>"; };
+		77099136AECCB5F19CB088FE9C9EEE25 /* TweetNacl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TweetNacl.swift; path = Sources/TweetNacl/TweetNacl.swift; sourceTree = "<group>"; };
+		79FDF9AC42604E1362B66FE90B53221D /* Pods-MorseMessenger-MorseMessengerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MorseMessenger-MorseMessengerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7BE50081DEF2B81DB645C49ED2DCCD12 /* PusherLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherLogger.swift; path = Sources/Helpers/PusherLogger.swift; sourceTree = "<group>"; };
+		8679B2433707A4263EBF799F59113D2F /* PusherDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherDelegate.swift; path = Sources/Protocols/PusherDelegate.swift; sourceTree = "<group>"; };
+		874384A3E35ACA8127DE527DDA8ECF51 /* Pods-MorseMessenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MorseMessenger.release.xcconfig"; sourceTree = "<group>"; };
+		8941B178CB26EB8A2918165038459243 /* Pods-MorseMessengerTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MorseMessengerTests-Info.plist"; sourceTree = "<group>"; };
+		8E961B902F1FB4D6CC0A8FFB85AFA03A /* NWWebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NWWebSocket.swift; path = Sources/NWWebSocket/Model/Client/NWWebSocket.swift; sourceTree = "<group>"; };
+		930F438E5BFD1382D8A23DEE3B524233 /* Pods-MorseMessenger-MorseMessengerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MorseMessenger-MorseMessengerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		95ED953C7489AC82D9D65B93E6968F4D /* PusherChannel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherChannel.swift; path = Sources/Models/PusherChannel.swift; sourceTree = "<group>"; };
+		989532E8D8A06A3FE55C11A77818B9A8 /* Pods-MorseMessenger-MorseMessengerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MorseMessenger-MorseMessengerUITests-umbrella.h"; sourceTree = "<group>"; };
+		99B0F02C12FE80AE7BC1EBA579A60D6E /* PusherSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PusherSwift-prefix.pch"; sourceTree = "<group>"; };
+		9A146D7694F278D6EED0A2880C823161 /* Pods-MorseMessenger-MorseMessengerUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MorseMessenger-MorseMessengerUITests-frameworks.sh"; sourceTree = "<group>"; };
+		9AF94CA0E4D42F83C55A72F439032CFA /* Constant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = Sources/TweetNacl/Constant.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A39C05CF0A3430E62DCCE2D49B1AA90F /* PusherConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherConnection.swift; path = Sources/Services/PusherConnection.swift; sourceTree = "<group>"; };
+		A54F4559CC4FBF57EC7B80573812E9AA /* NWWebSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NWWebSocket-dummy.m"; sourceTree = "<group>"; };
+		AA323DF527867CFE24CE74F4AD5064E7 /* Pods-MorseMessenger-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MorseMessenger-acknowledgements.plist"; sourceTree = "<group>"; };
+		AA6D48C1777F6A3A34CD321B23AC49C2 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Sources/Models/Constants.swift; sourceTree = "<group>"; };
+		B1156FBA003A155B4A75F484F5C75355 /* ctweetnacl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ctweetnacl.h; path = Sources/CTweetNacl/include/ctweetnacl.h; sourceTree = "<group>"; };
+		B188FE3993B15EED19011CCD786D3787 /* PusherEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherEvent.swift; path = Sources/Models/PusherEvent.swift; sourceTree = "<group>"; };
+		B25D00C071D910A3C4D4C7F60DDF42FB /* Pods-MorseMessenger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MorseMessenger-dummy.m"; sourceTree = "<group>"; };
+		B451A0ADE598D2CDCFAD3944CD7268FD /* Pods-MorseMessengerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MorseMessengerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B8C1E3EC9718C47CAC895F79332C5B2F /* TweetNacl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TweetNacl-prefix.pch"; sourceTree = "<group>"; };
+		B9AB3A1ADE8E64418071458453E53A96 /* Pods-MorseMessenger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MorseMessenger.debug.xcconfig"; sourceTree = "<group>"; };
+		BBDB27A2D226062039FF181B9F25B71B /* ObjectiveC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectiveC.swift; path = Sources/ObjC/ObjectiveC.swift; sourceTree = "<group>"; };
+		BC9326F1C82CE08C96EE83732394670B /* PusherGlobalChannel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherGlobalChannel.swift; path = Sources/Models/PusherGlobalChannel.swift; sourceTree = "<group>"; };
+		C0BD5B436C7E16ADAA6B23FBF5F7F7FA /* Pods-MorseMessenger-MorseMessengerUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MorseMessenger-MorseMessengerUITests-Info.plist"; sourceTree = "<group>"; };
+		C5E7803E8D634FB1D5723D94856A9048 /* Pods-MorseMessengerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MorseMessengerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C8C68B1A48D0AC309421B31EBF9B85F4 /* NWWebSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NWWebSocket.modulemap; sourceTree = "<group>"; };
+		C942D66B5CA7B8C2E44196858E2F64E5 /* TweetNacl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TweetNacl.modulemap; sourceTree = "<group>"; };
+		CA2B20CB470A10DBAA41D82137100CF2 /* PusherSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PusherSwift-Info.plist"; sourceTree = "<group>"; };
+		CF14EADA73F325D21D9E221635C1F490 /* NWWebSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NWWebSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA1E383F9D22F598CCCB67B4C0545BF7 /* Pods_MorseMessenger_MorseMessengerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MorseMessenger_MorseMessengerUITests.framework; path = "Pods-MorseMessenger-MorseMessengerUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E211740F6E2727389F321BDC4FCB0F0A /* Pods-MorseMessenger.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MorseMessenger.modulemap"; sourceTree = "<group>"; };
+		E679C401603F3A84E5551FEB5F52D519 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E6D4635030D4EDF3472D366A4D0804A0 /* AuthRequestBuilderProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthRequestBuilderProtocol.swift; path = Sources/Protocols/AuthRequestBuilderProtocol.swift; sourceTree = "<group>"; };
+		E7192481BB5D3F04E8A606F149CD8E9D /* NWWebSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NWWebSocket.framework; path = NWWebSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8AC8BDB18ED6D0518CC327E59BD4445 /* Pods-MorseMessenger-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MorseMessenger-Info.plist"; sourceTree = "<group>"; };
+		F0D97D147F3966003954A3D18689BEFB /* TweetNacl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TweetNacl-dummy.m"; sourceTree = "<group>"; };
+		F9907217C9222C8D96C985D60023E422 /* PusherSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PusherSwift.modulemap; sourceTree = "<group>"; };
+		FAD0E97549E4A3CFB6FC1897AB1ECD43 /* Pods-MorseMessenger-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MorseMessenger-frameworks.sh"; sourceTree = "<group>"; };
+		FE0E0D08EA0ADFD70AAEFD6D01FDDEF1 /* Authorizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authorizer.swift; path = Sources/Protocols/Authorizer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E9E5CA914BB8DDD92C6E13EDD3CEFE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90AE25F7890A0DA2AFE7B8A0C4FD2CE7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9146BFBC706D5D43C7CC0ECCC44C157D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36CE0AB9581452B11BA84B71B0A18E7D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4B299CD1455E9CB0B162129ACB56AFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FA2676B986069EAC5142FB9291F037F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1AD8EAA454E3A1AFF35B1A6236FC5B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC90F9F6C301DF527FE48F68CC4DFE5D /* Foundation.framework in Frameworks */,
+				C76FB90F9CDFADED9FD2DD2F8AABB961 /* NWWebSocket.framework in Frameworks */,
+				EC01F5D34C26321560F7DBD29B0DB72D /* TweetNacl.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD978AD5853F209D6C8B6819C812CC3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C0698936D6F8304402AE4CA62B78F04 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF9C9CC5E2F412FBB94F690F73DC750 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05F7007BE39BF9F1FCFAC68D406236BB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1215013CD5575C2E3FC3D89699C5D194 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C942D66B5CA7B8C2E44196858E2F64E5 /* TweetNacl.modulemap */,
+				F0D97D147F3966003954A3D18689BEFB /* TweetNacl-dummy.m */,
+				7479C4E1E0DB2386A57755A01485ADAA /* TweetNacl-Info.plist */,
+				B8C1E3EC9718C47CAC895F79332C5B2F /* TweetNacl-prefix.pch */,
+				3CB5C33F98BF25AD09B4BE7D37083BAB /* TweetNacl-umbrella.h */,
+				13C686C5CBDDEBBFD68895D9A713EEF5 /* TweetNacl.debug.xcconfig */,
+				227571295BC444E87B73B49A606CB722 /* TweetNacl.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TweetNacl";
+			sourceTree = "<group>";
+		};
+		19AC1BFCD04E2387BD102E40080D04FE /* Pods-MorseMessengerTests */ = {
+			isa = PBXGroup;
+			children = (
+				138F27179E4BC6AD0810B3AA1B840985 /* Pods-MorseMessengerTests.modulemap */,
+				C5E7803E8D634FB1D5723D94856A9048 /* Pods-MorseMessengerTests-acknowledgements.markdown */,
+				B451A0ADE598D2CDCFAD3944CD7268FD /* Pods-MorseMessengerTests-acknowledgements.plist */,
+				18C0F85B226FF0EE9C84D36E9F6B0266 /* Pods-MorseMessengerTests-dummy.m */,
+				8941B178CB26EB8A2918165038459243 /* Pods-MorseMessengerTests-Info.plist */,
+				62090B21383ED58CB3F0D205BAE798DC /* Pods-MorseMessengerTests-umbrella.h */,
+				2320CC0CCAF87040A7DC6B1592BABBF4 /* Pods-MorseMessengerTests.debug.xcconfig */,
+				435AFD4E4D9890817ECC37A439A3A878 /* Pods-MorseMessengerTests.release.xcconfig */,
+			);
+			name = "Pods-MorseMessengerTests";
+			path = "Target Support Files/Pods-MorseMessengerTests";
+			sourceTree = "<group>";
+		};
+		2E2B39F8333D02666F9DD21E8AD5EC52 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9907217C9222C8D96C985D60023E422 /* PusherSwift.modulemap */,
+				2728809FC4357DA3818CFB635EC7D98D /* PusherSwift-dummy.m */,
+				CA2B20CB470A10DBAA41D82137100CF2 /* PusherSwift-Info.plist */,
+				99B0F02C12FE80AE7BC1EBA579A60D6E /* PusherSwift-prefix.pch */,
+				38F3B4098480C694C3E8D4B6D0142014 /* PusherSwift-umbrella.h */,
+				24AEEFD7F8902438FC85F24BE7C9FA62 /* PusherSwift.debug.xcconfig */,
+				58A49A8426D52C9A7FE03E6C9DC7C212 /* PusherSwift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PusherSwift";
+			sourceTree = "<group>";
+		};
+		4E3D8A982E75148D8FE38734EAF863EF /* NWWebSocket */ = {
+			isa = PBXGroup;
+			children = (
+				3236E37A26C959A5D8C50451B8C5192C /* NWConnection+Extension.swift */,
+				8E961B902F1FB4D6CC0A8FFB85AFA03A /* NWWebSocket.swift */,
+				3AEF893B00C1763473D3CB893BF57377 /* WebSocketConnection.swift */,
+				7BF5713247B1AB6EC0D68424ECDB1364 /* Support Files */,
+			);
+			name = NWWebSocket;
+			path = NWWebSocket;
+			sourceTree = "<group>";
+		};
+		504EEC45680B61C6E9789862D055D9DA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E679C401603F3A84E5551FEB5F52D519 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		66CD76FB3CCB5164355BC1D1DD9016D0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC704C682D5997876156158592E60CFD /* Pods-MorseMessenger */,
+				83E06C11AEA2DAF23E580D0EC6BE7D29 /* Pods-MorseMessenger-MorseMessengerUITests */,
+				19AC1BFCD04E2387BD102E40080D04FE /* Pods-MorseMessengerTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7BF5713247B1AB6EC0D68424ECDB1364 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C8C68B1A48D0AC309421B31EBF9B85F4 /* NWWebSocket.modulemap */,
+				A54F4559CC4FBF57EC7B80573812E9AA /* NWWebSocket-dummy.m */,
+				0496376BC6FE200C9FE20096F3449312 /* NWWebSocket-Info.plist */,
+				0E4AD90BE52EDB80B27419E8BA6B4459 /* NWWebSocket-prefix.pch */,
+				4D08754D25AA68B6DB1AE4340DA36F9E /* NWWebSocket-umbrella.h */,
+				61B29154794282D2DC85887D9BE2EF8A /* NWWebSocket.debug.xcconfig */,
+				04564105300EF4F206AA5DE55C698AF9 /* NWWebSocket.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NWWebSocket";
+			sourceTree = "<group>";
+		};
+		7CCC2F0F216F0A3B467E0049A85AA8FA /* TweetNacl */ = {
+			isa = PBXGroup;
+			children = (
+				9AF94CA0E4D42F83C55A72F439032CFA /* Constant.swift */,
+				2391E04945869FE7ECDC1CA3A7B68CD4 /* ctweetnacl.c */,
+				B1156FBA003A155B4A75F484F5C75355 /* ctweetnacl.h */,
+				20AAB686F1114FF8C8BEC86DF0B5C148 /* TweetNacl.h */,
+				77099136AECCB5F19CB088FE9C9EEE25 /* TweetNacl.swift */,
+				1215013CD5575C2E3FC3D89699C5D194 /* Support Files */,
+			);
+			name = TweetNacl;
+			path = TweetNacl;
+			sourceTree = "<group>";
+		};
+		83E06C11AEA2DAF23E580D0EC6BE7D29 /* Pods-MorseMessenger-MorseMessengerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1E6BFABD497773A865256CDC6F03F8E2 /* Pods-MorseMessenger-MorseMessengerUITests.modulemap */,
+				4925080529093815246F5DD140ABF342 /* Pods-MorseMessenger-MorseMessengerUITests-acknowledgements.markdown */,
+				930F438E5BFD1382D8A23DEE3B524233 /* Pods-MorseMessenger-MorseMessengerUITests-acknowledgements.plist */,
+				24059955A29D75CD00D3D5A412A7E4A5 /* Pods-MorseMessenger-MorseMessengerUITests-dummy.m */,
+				9A146D7694F278D6EED0A2880C823161 /* Pods-MorseMessenger-MorseMessengerUITests-frameworks.sh */,
+				C0BD5B436C7E16ADAA6B23FBF5F7F7FA /* Pods-MorseMessenger-MorseMessengerUITests-Info.plist */,
+				989532E8D8A06A3FE55C11A77818B9A8 /* Pods-MorseMessenger-MorseMessengerUITests-umbrella.h */,
+				79FDF9AC42604E1362B66FE90B53221D /* Pods-MorseMessenger-MorseMessengerUITests.debug.xcconfig */,
+				41156363BC2EDE1CDE08102DB6EC6798 /* Pods-MorseMessenger-MorseMessengerUITests.release.xcconfig */,
+			);
+			name = "Pods-MorseMessenger-MorseMessengerUITests";
+			path = "Target Support Files/Pods-MorseMessenger-MorseMessengerUITests";
+			sourceTree = "<group>";
+		};
+		91FDA5692DD7E88BA8D5BD08A9E36483 /* PusherSwift */ = {
+			isa = PBXGroup;
+			children = (
+				FE0E0D08EA0ADFD70AAEFD6D01FDDEF1 /* Authorizer.swift */,
+				E6D4635030D4EDF3472D366A4D0804A0 /* AuthRequestBuilderProtocol.swift */,
+				AA6D48C1777F6A3A34CD321B23AC49C2 /* Constants.swift */,
+				BBDB27A2D226062039FF181B9F25B71B /* ObjectiveC.swift */,
+				95ED953C7489AC82D9D65B93E6968F4D /* PusherChannel.swift */,
+				42C3F5A281F73CF71C2C25CAF17FB97F /* PusherChannels.swift */,
+				03164AC06FCB027BFB457AEB5E05D73B /* PusherChannelsProtocolCloseCode.swift */,
+				2B3C97C5DFF564734BFAF6AE4E743ECA /* PusherClientOptions.swift */,
+				A39C05CF0A3430E62DCCE2D49B1AA90F /* PusherConnection.swift */,
+				664E5054A3E9EC37DCDA41ABD017EA32 /* PusherCrypto.swift */,
+				0CAF4E7DC3410FF96F908FE2F01D3AAD /* PusherDecryptor.swift */,
+				8679B2433707A4263EBF799F59113D2F /* PusherDelegate.swift */,
+				420DD1FC0E728BA60885966B0406EC83 /* PusherEncryptionHelpers.swift */,
+				0E37615534057E7F45D7AD18BA2A8A52 /* PusherError.swift */,
+				B188FE3993B15EED19011CCD786D3787 /* PusherEvent.swift */,
+				2FC415BFFBEAF01C525F357989FD618F /* PusherEventFactory.swift */,
+				120133D5A15F5246DC27122E4BDBFEE7 /* PusherEventQueue.swift */,
+				BC9326F1C82CE08C96EE83732394670B /* PusherGlobalChannel.swift */,
+				7BE50081DEF2B81DB645C49ED2DCCD12 /* PusherLogger.swift */,
+				595B3DEBECBE661081B6C567F63B750E /* PusherParser.swift */,
+				1468A3B42B58583067987DA1D00E9F42 /* PusherPresenceChannel.swift */,
+				7656604F224BD1F868374B5B18ED8798 /* PusherSwift.swift */,
+				3BA0001D9BBE702E52FB7DE66F8F1533 /* PusherWebsocketDelegate.swift */,
+				2E2B39F8333D02666F9DD21E8AD5EC52 /* Support Files */,
+			);
+			name = PusherSwift;
+			path = PusherSwift;
+			sourceTree = "<group>";
+		};
+		95F1D6131F29AF91E92D2EF65BD26A56 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E3D8A982E75148D8FE38734EAF863EF /* NWWebSocket */,
+				91FDA5692DD7E88BA8D5BD08A9E36483 /* PusherSwift */,
+				7CCC2F0F216F0A3B467E0049A85AA8FA /* TweetNacl */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C33C48181C2093BBB98EBDE70C4C19AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7192481BB5D3F04E8A606F149CD8E9D /* NWWebSocket.framework */,
+				35A3761075592476BE8DC05B65596222 /* Pods_MorseMessenger.framework */,
+				DA1E383F9D22F598CCCB67B4C0545BF7 /* Pods_MorseMessenger_MorseMessengerUITests.framework */,
+				558393595FA1923A28425F86306E65F3 /* Pods_MorseMessengerTests.framework */,
+				0B32C323CD918E74390113D283732BDC /* PusherSwift.framework */,
+				317CDB3617AE7CFBD3C9B5B901F8F543 /* TweetNacl.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				FF1F58D828273214DB32895E9B0E7845 /* Frameworks */,
+				95F1D6131F29AF91E92D2EF65BD26A56 /* Pods */,
+				C33C48181C2093BBB98EBDE70C4C19AF /* Products */,
+				66CD76FB3CCB5164355BC1D1DD9016D0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DC704C682D5997876156158592E60CFD /* Pods-MorseMessenger */ = {
+			isa = PBXGroup;
+			children = (
+				E211740F6E2727389F321BDC4FCB0F0A /* Pods-MorseMessenger.modulemap */,
+				5C1CECB06E94B58328F73B2383723E6B /* Pods-MorseMessenger-acknowledgements.markdown */,
+				AA323DF527867CFE24CE74F4AD5064E7 /* Pods-MorseMessenger-acknowledgements.plist */,
+				B25D00C071D910A3C4D4C7F60DDF42FB /* Pods-MorseMessenger-dummy.m */,
+				FAD0E97549E4A3CFB6FC1897AB1ECD43 /* Pods-MorseMessenger-frameworks.sh */,
+				E8AC8BDB18ED6D0518CC327E59BD4445 /* Pods-MorseMessenger-Info.plist */,
+				683E080B0B2AC7927C7A22EF0F7A9011 /* Pods-MorseMessenger-umbrella.h */,
+				B9AB3A1ADE8E64418071458453E53A96 /* Pods-MorseMessenger.debug.xcconfig */,
+				874384A3E35ACA8127DE527DDA8ECF51 /* Pods-MorseMessenger.release.xcconfig */,
+			);
+			name = "Pods-MorseMessenger";
+			path = "Target Support Files/Pods-MorseMessenger";
+			sourceTree = "<group>";
+		};
+		FF1F58D828273214DB32895E9B0E7845 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF14EADA73F325D21D9E221635C1F490 /* NWWebSocket.framework */,
+				6ACEB22F8A7889FC098EC16859C42517 /* TweetNacl.framework */,
+				504EEC45680B61C6E9789862D055D9DA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2ACDAD891DF10657C70914D859EFD1C1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AF8BAFC4017CE4F9E7BBB5358DAA076 /* PusherSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45D0706274E1F656B10EDFD6065AB321 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57D6CFF98F00B88E75CD5853E48E8BF /* Pods-MorseMessenger-MorseMessengerUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6984D46285FFA3DF8259D548186C6179 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57A977C0072D7CA7B2B62D72FF9E4866 /* ctweetnacl.h in Headers */,
+				A2CC6F2BB41950FDC261C05059722301 /* TweetNacl-umbrella.h in Headers */,
+				696233CF6BD0D0CC32080191319C34BA /* TweetNacl.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1FC1DA4B30057CACCDF1995E4BE9942 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B9112EE5680095C49AA0E8757A6537E /* Pods-MorseMessenger-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D027795D8F9A11AD3DA6FA39A628EBDD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E22D8F2F45C15FE1D869D6C5789F7CEB /* Pods-MorseMessengerTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F33FF7CD1901393E45A2A3AB0DF6BED4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5D3CBA4E4966A77973567877BFEE840 /* NWWebSocket-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		04C1AEEF318DFD4E2A3CB6E41814F02F /* Pods-MorseMessenger-MorseMessengerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F83FEB37D3B4CC7490911361D22821A7 /* Build configuration list for PBXNativeTarget "Pods-MorseMessenger-MorseMessengerUITests" */;
+			buildPhases = (
+				45D0706274E1F656B10EDFD6065AB321 /* Headers */,
+				B08BF7BBE2026DEE5CC261FE050D81EE /* Sources */,
+				ECF9C9CC5E2F412FBB94F690F73DC750 /* Frameworks */,
+				912F47C756505C0C1DDC630AEFFCCBC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C147C6F751B31A1B9711AC942D988D4B /* PBXTargetDependency */,
+				122F90424CE99B693F209B5ED11DA84E /* PBXTargetDependency */,
+				615BAB4AFE5496CA2D59D35AF7C17243 /* PBXTargetDependency */,
+			);
+			name = "Pods-MorseMessenger-MorseMessengerUITests";
+			productName = "Pods-MorseMessenger-MorseMessengerUITests";
+			productReference = DA1E383F9D22F598CCCB67B4C0545BF7 /* Pods_MorseMessenger_MorseMessengerUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		08C5D15A74FC80C2B1B6710D19AA056A /* Pods-MorseMessengerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FEA8D3703B93C1AD6352A49E56B571F /* Build configuration list for PBXNativeTarget "Pods-MorseMessengerTests" */;
+			buildPhases = (
+				D027795D8F9A11AD3DA6FA39A628EBDD /* Headers */,
+				C2785A97484398770B564A4F2BC4C169 /* Sources */,
+				4E9E5CA914BB8DDD92C6E13EDD3CEFE8 /* Frameworks */,
+				546D2264F947EEE64EC4A48115909125 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2338282880BCDFDE11C7850E88E80EA /* PBXTargetDependency */,
+			);
+			name = "Pods-MorseMessengerTests";
+			productName = "Pods-MorseMessengerTests";
+			productReference = 558393595FA1923A28425F86306E65F3 /* Pods_MorseMessengerTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1C8677E8CA51138111F0D17125A79694 /* NWWebSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5313DADD66141B5D4AD5E3EC81EA25D /* Build configuration list for PBXNativeTarget "NWWebSocket" */;
+			buildPhases = (
+				F33FF7CD1901393E45A2A3AB0DF6BED4 /* Headers */,
+				EABC1551041BEC450C4920352873BA2B /* Sources */,
+				CD978AD5853F209D6C8B6819C812CC3E /* Frameworks */,
+				6BF906D08EB57E6F98C58232184289C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NWWebSocket;
+			productName = NWWebSocket;
+			productReference = E7192481BB5D3F04E8A606F149CD8E9D /* NWWebSocket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4921D5B9FFDABBEE3823ABC7E8DAA736 /* PusherSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7E000E5DB427B2B0822912262262E35 /* Build configuration list for PBXNativeTarget "PusherSwift" */;
+			buildPhases = (
+				2ACDAD891DF10657C70914D859EFD1C1 /* Headers */,
+				55E68F13FC9449F48CDEDEF8C99B14A5 /* Sources */,
+				B1AD8EAA454E3A1AFF35B1A6236FC5B6 /* Frameworks */,
+				8546662087D09B7269444CAC29FC2820 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93EA2F16D2DC6D853F4FC58C70CA7A09 /* PBXTargetDependency */,
+				9DF1CD34D6BCDDD36BCA13580A0225D8 /* PBXTargetDependency */,
+			);
+			name = PusherSwift;
+			productName = PusherSwift;
+			productReference = 0B32C323CD918E74390113D283732BDC /* PusherSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		95C1A3B2D9F3790A9019BEDD61991ED3 /* Pods-MorseMessenger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12E02AAD0449A7DCCA1D29D9A50819EE /* Build configuration list for PBXNativeTarget "Pods-MorseMessenger" */;
+			buildPhases = (
+				B1FC1DA4B30057CACCDF1995E4BE9942 /* Headers */,
+				820DD0EC3AF05A232EE3F6F00731587A /* Sources */,
+				A4B299CD1455E9CB0B162129ACB56AFD /* Frameworks */,
+				976E884B66818176666EC1848389C6FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2641B5E64A5A790294057C1846EEB8AB /* PBXTargetDependency */,
+				43348AB239F849D68D4AB1735AC8C16E /* PBXTargetDependency */,
+				F26835FAC6E8B8942BFB83DD7881106A /* PBXTargetDependency */,
+			);
+			name = "Pods-MorseMessenger";
+			productName = "Pods-MorseMessenger";
+			productReference = 35A3761075592476BE8DC05B65596222 /* Pods_MorseMessenger.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E058628796F895302820DFBD58DCEDAC /* TweetNacl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57C0603473CE65148CF6DBEB13D7F226 /* Build configuration list for PBXNativeTarget "TweetNacl" */;
+			buildPhases = (
+				6984D46285FFA3DF8259D548186C6179 /* Headers */,
+				EB74A42CE80B63CDC0DFC8031519A56E /* Sources */,
+				9146BFBC706D5D43C7CC0ECCC44C157D /* Frameworks */,
+				8E5E1C45D5FA7276A046D08718F86DBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TweetNacl;
+			productName = TweetNacl;
+			productReference = 317CDB3617AE7CFBD3C9B5B901F8F543 /* TweetNacl.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = C33C48181C2093BBB98EBDE70C4C19AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C8677E8CA51138111F0D17125A79694 /* NWWebSocket */,
+				95C1A3B2D9F3790A9019BEDD61991ED3 /* Pods-MorseMessenger */,
+				04C1AEEF318DFD4E2A3CB6E41814F02F /* Pods-MorseMessenger-MorseMessengerUITests */,
+				08C5D15A74FC80C2B1B6710D19AA056A /* Pods-MorseMessengerTests */,
+				4921D5B9FFDABBEE3823ABC7E8DAA736 /* PusherSwift */,
+				E058628796F895302820DFBD58DCEDAC /* TweetNacl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		546D2264F947EEE64EC4A48115909125 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BF906D08EB57E6F98C58232184289C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8546662087D09B7269444CAC29FC2820 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E5E1C45D5FA7276A046D08718F86DBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		912F47C756505C0C1DDC630AEFFCCBC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		976E884B66818176666EC1848389C6FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55E68F13FC9449F48CDEDEF8C99B14A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A3A703A83292097DBFBF208BA534A41 /* Authorizer.swift in Sources */,
+				A83423EF65A2057A78F5348942F82055 /* AuthRequestBuilderProtocol.swift in Sources */,
+				C6DF6CCDBAA4B6491C91C882A153B1AB /* Constants.swift in Sources */,
+				1C6DEAAB927399629C6A5271F9DD5177 /* ObjectiveC.swift in Sources */,
+				7941E438492F18D68B961EF329F97B0C /* PusherChannel.swift in Sources */,
+				F19832555DCC8AC123310CC4CE429E53 /* PusherChannels.swift in Sources */,
+				EBC03C22A1441458676A886CD1E144DC /* PusherChannelsProtocolCloseCode.swift in Sources */,
+				132557987F5994C3776ADB572DA6B359 /* PusherClientOptions.swift in Sources */,
+				851120B685CCAB8075B718E778B69CB7 /* PusherConnection.swift in Sources */,
+				00740BB275FA3071BAB13645091D4908 /* PusherCrypto.swift in Sources */,
+				814A082DF742454C0A92778C239DAC02 /* PusherDecryptor.swift in Sources */,
+				6C9742F5B2371501E87E659C43D1252A /* PusherDelegate.swift in Sources */,
+				E721760EFAEBF142E64F0F85B19AAFE6 /* PusherEncryptionHelpers.swift in Sources */,
+				8AAD33A93EFEC71C056D7454992B1E6C /* PusherError.swift in Sources */,
+				B53767458896BDEB7E6E9F52A20E5F46 /* PusherEvent.swift in Sources */,
+				FF71ACC0BF0834BD13F50013B25C4AE9 /* PusherEventFactory.swift in Sources */,
+				0B0E7AA4A658ADF10F1A7CB3D67B465D /* PusherEventQueue.swift in Sources */,
+				880850D6324C49B603D68A948CE32DF4 /* PusherGlobalChannel.swift in Sources */,
+				FEF1DC287DF75725E9A6FCE9EC87F893 /* PusherLogger.swift in Sources */,
+				2BF95C73FE2B62812870B438D2B5D148 /* PusherParser.swift in Sources */,
+				B643DA3207E18491EEDF626700BDAE41 /* PusherPresenceChannel.swift in Sources */,
+				CF91A91C474EF33B17FA2346266CF868 /* PusherSwift-dummy.m in Sources */,
+				A04FB27DA0D8FC7EA3BD4B1B8FEF7D3A /* PusherSwift.swift in Sources */,
+				908CBA96EA99ECB4646FA4D8A12EC3F6 /* PusherWebsocketDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		820DD0EC3AF05A232EE3F6F00731587A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AE2F13D5DF536A17A201CF1A36C0DAD /* Pods-MorseMessenger-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B08BF7BBE2026DEE5CC261FE050D81EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93F4B884B56FF9F3F089213D5BF6C955 /* Pods-MorseMessenger-MorseMessengerUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2785A97484398770B564A4F2BC4C169 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				403C21A19FB94FB679CA6134EEB7ABB7 /* Pods-MorseMessengerTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EABC1551041BEC450C4920352873BA2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39BDCE263118D091FA7B88A62B698A2A /* NWConnection+Extension.swift in Sources */,
+				8C0AF72D95C03E32492116F9A99A5DA2 /* NWWebSocket-dummy.m in Sources */,
+				EEFECE3FE4F507E6088995B3D66BB63E /* NWWebSocket.swift in Sources */,
+				118E15E4CDF36489FB36C52DED11FA90 /* WebSocketConnection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB74A42CE80B63CDC0DFC8031519A56E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E8BD86D820D065287C0D5B9C6D82AEF /* Constant.swift in Sources */,
+				94CC94410B5721521ED5798E5CB1BF4C /* ctweetnacl.c in Sources */,
+				67C36BDCE5256A8B9A1BB64F3D8017E4 /* TweetNacl-dummy.m in Sources */,
+				0AC6AE69852071D56085AF67C1782795 /* TweetNacl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		122F90424CE99B693F209B5ED11DA84E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PusherSwift;
+			target = 4921D5B9FFDABBEE3823ABC7E8DAA736 /* PusherSwift */;
+			targetProxy = 243E500FE7BDA0CD50A9A964D901CB15 /* PBXContainerItemProxy */;
+		};
+		2641B5E64A5A790294057C1846EEB8AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NWWebSocket;
+			target = 1C8677E8CA51138111F0D17125A79694 /* NWWebSocket */;
+			targetProxy = F4778F7CB923B7389B336CEB3D44965B /* PBXContainerItemProxy */;
+		};
+		43348AB239F849D68D4AB1735AC8C16E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PusherSwift;
+			target = 4921D5B9FFDABBEE3823ABC7E8DAA736 /* PusherSwift */;
+			targetProxy = 25ACA99207FF71E140B9386EBEE4CDA5 /* PBXContainerItemProxy */;
+		};
+		615BAB4AFE5496CA2D59D35AF7C17243 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TweetNacl;
+			target = E058628796F895302820DFBD58DCEDAC /* TweetNacl */;
+			targetProxy = B12D1CFB9F4C28C374D6A09D68468EB6 /* PBXContainerItemProxy */;
+		};
+		93EA2F16D2DC6D853F4FC58C70CA7A09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NWWebSocket;
+			target = 1C8677E8CA51138111F0D17125A79694 /* NWWebSocket */;
+			targetProxy = 9B247F4E75ADEAD1E6E82DF945D4F595 /* PBXContainerItemProxy */;
+		};
+		9DF1CD34D6BCDDD36BCA13580A0225D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TweetNacl;
+			target = E058628796F895302820DFBD58DCEDAC /* TweetNacl */;
+			targetProxy = 69A1286726354B88D57AC6C93A33DA6C /* PBXContainerItemProxy */;
+		};
+		A2338282880BCDFDE11C7850E88E80EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MorseMessenger";
+			target = 95C1A3B2D9F3790A9019BEDD61991ED3 /* Pods-MorseMessenger */;
+			targetProxy = 31D59B1D3E367372786EC36AAEAD85BA /* PBXContainerItemProxy */;
+		};
+		C147C6F751B31A1B9711AC942D988D4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NWWebSocket;
+			target = 1C8677E8CA51138111F0D17125A79694 /* NWWebSocket */;
+			targetProxy = D2F5BF23B15B198B80A46B6BA8D5E897 /* PBXContainerItemProxy */;
+		};
+		F26835FAC6E8B8942BFB83DD7881106A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TweetNacl;
+			target = E058628796F895302820DFBD58DCEDAC /* TweetNacl */;
+			targetProxy = 93FAF01ABCB807DBB3C5FDE4C7064E85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B70DDA181891A785A7BA5667B06455D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13C686C5CBDDEBBFD68895D9A713EEF5 /* TweetNacl.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TweetNacl/TweetNacl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TweetNacl/TweetNacl-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TweetNacl/TweetNacl.modulemap";
+				PRODUCT_MODULE_NAME = TweetNacl;
+				PRODUCT_NAME = TweetNacl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0F4BCBA0C5DFFBD994F4804707A0DF8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24AEEFD7F8902438FC85F24BE7C9FA62 /* PusherSwift.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PusherSwift/PusherSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PusherSwift/PusherSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PusherSwift/PusherSwift.modulemap";
+				PRODUCT_MODULE_NAME = PusherSwift;
+				PRODUCT_NAME = PusherSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1046EBA7723109D28DB2241344FFC9F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61B29154794282D2DC85887D9BE2EF8A /* NWWebSocket.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NWWebSocket/NWWebSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NWWebSocket/NWWebSocket-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NWWebSocket/NWWebSocket.modulemap";
+				PRODUCT_MODULE_NAME = NWWebSocket;
+				PRODUCT_NAME = NWWebSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		158B15922F012C634D74AED4433A8015 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58A49A8426D52C9A7FE03E6C9DC7C212 /* PusherSwift.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PusherSwift/PusherSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PusherSwift/PusherSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PusherSwift/PusherSwift.modulemap";
+				PRODUCT_MODULE_NAME = PusherSwift;
+				PRODUCT_NAME = PusherSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		307BA90779EF7B37B621180ED78BE058 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 874384A3E35ACA8127DE527DDA8ECF51 /* Pods-MorseMessenger.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MorseMessenger/Pods-MorseMessenger-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MorseMessenger/Pods-MorseMessenger.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3A2EDDA3E727266999F22674264FDE3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2320CC0CCAF87040A7DC6B1592BABBF4 /* Pods-MorseMessengerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MorseMessengerTests/Pods-MorseMessengerTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MorseMessengerTests/Pods-MorseMessengerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4619F0417BE0D9FA7810643DE9D37213 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41156363BC2EDE1CDE08102DB6EC6798 /* Pods-MorseMessenger-MorseMessengerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MorseMessenger-MorseMessengerUITests/Pods-MorseMessenger-MorseMessengerUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MorseMessenger-MorseMessengerUITests/Pods-MorseMessenger-MorseMessengerUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5CB2EB805C5B5B01D2930D284E8A8934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04564105300EF4F206AA5DE55C698AF9 /* NWWebSocket.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NWWebSocket/NWWebSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NWWebSocket/NWWebSocket-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NWWebSocket/NWWebSocket.modulemap";
+				PRODUCT_MODULE_NAME = NWWebSocket;
+				PRODUCT_NAME = NWWebSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6FA7DF5FFB2F853D3C5CB6ACD6E4B2B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79FDF9AC42604E1362B66FE90B53221D /* Pods-MorseMessenger-MorseMessengerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MorseMessenger-MorseMessengerUITests/Pods-MorseMessenger-MorseMessengerUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MorseMessenger-MorseMessengerUITests/Pods-MorseMessenger-MorseMessengerUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		71243899B61152433AAE34EE86456EE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		75D70EEEA0A456E14F7338A7F342964E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B4A1779E401AC80A1ECA7649310BA4EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 227571295BC444E87B73B49A606CB722 /* TweetNacl.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TweetNacl/TweetNacl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TweetNacl/TweetNacl-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TweetNacl/TweetNacl.modulemap";
+				PRODUCT_MODULE_NAME = TweetNacl;
+				PRODUCT_NAME = TweetNacl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EC04B0D0AEB848A9FE15D36EA5EEECE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9AB3A1ADE8E64418071458453E53A96 /* Pods-MorseMessenger.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MorseMessenger/Pods-MorseMessenger-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MorseMessenger/Pods-MorseMessenger.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EE018ABEA4443A578D0E6C15C04FF72D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 435AFD4E4D9890817ECC37A439A3A878 /* Pods-MorseMessengerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MorseMessengerTests/Pods-MorseMessengerTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MorseMessengerTests/Pods-MorseMessengerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12E02AAD0449A7DCCA1D29D9A50819EE /* Build configuration list for PBXNativeTarget "Pods-MorseMessenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC04B0D0AEB848A9FE15D36EA5EEECE8 /* Debug */,
+				307BA90779EF7B37B621180ED78BE058 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FEA8D3703B93C1AD6352A49E56B571F /* Build configuration list for PBXNativeTarget "Pods-MorseMessengerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A2EDDA3E727266999F22674264FDE3E /* Debug */,
+				EE018ABEA4443A578D0E6C15C04FF72D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75D70EEEA0A456E14F7338A7F342964E /* Debug */,
+				71243899B61152433AAE34EE86456EE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57C0603473CE65148CF6DBEB13D7F226 /* Build configuration list for PBXNativeTarget "TweetNacl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B70DDA181891A785A7BA5667B06455D /* Debug */,
+				B4A1779E401AC80A1ECA7649310BA4EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5313DADD66141B5D4AD5E3EC81EA25D /* Build configuration list for PBXNativeTarget "NWWebSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1046EBA7723109D28DB2241344FFC9F2 /* Debug */,
+				5CB2EB805C5B5B01D2930D284E8A8934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7E000E5DB427B2B0822912262262E35 /* Build configuration list for PBXNativeTarget "PusherSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F4BCBA0C5DFFBD994F4804707A0DF8B /* Debug */,
+				158B15922F012C634D74AED4433A8015 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F83FEB37D3B4CC7490911361D22821A7 /* Build configuration list for PBXNativeTarget "Pods-MorseMessenger-MorseMessengerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FA7DF5FFB2F853D3C5CB6ACD6E4B2B1 /* Debug */,
+				4619F0417BE0D9FA7810643DE9D37213 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
