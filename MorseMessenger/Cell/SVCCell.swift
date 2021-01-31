@@ -6,9 +6,13 @@
 //
 
 import UIKit
-
+protocol SVCCellDelegate {
+    func buttonPressed()
+}
 class SVCCell:UITableViewCell{
     @IBOutlet weak var button: UIButton!
+    var delegate:SVCCellDelegate?
+    
     var cellText = "what"{
         didSet{
             button.setTitle(cellText, for: .normal)
@@ -18,6 +22,7 @@ class SVCCell:UITableViewCell{
         cellText=""
     }
     @IBAction func buttonOnClick(_ sender: Any) {
+        delegate?.buttonPressed()
         print("hello")
     }
     

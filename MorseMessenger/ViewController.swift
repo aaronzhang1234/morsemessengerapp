@@ -17,7 +17,19 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
+
+       //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
+       //tap.cancelsTouchesInView = false
+
+       view.addGestureRecognizer(tap)
+   }
+
+   //Calls this function when the tap is recognized.
+   @objc func dismissKeyboard() {
+       view.endEditing(true)
+   }
     @IBAction func buttonOnClick(_ sender: Any) {
         input = textfield.text
         counter = counter + 1

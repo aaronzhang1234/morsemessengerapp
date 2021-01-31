@@ -62,42 +62,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Wc-Q0-iUa">
-                                <rect key="frame" x="0.0" y="200" width="414" height="696"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yd0-Ep-A78">
-                                <rect key="frame" x="184" y="122" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="buttonOnClick:" destination="yUL-sg-cLP" eventType="touchUpInside" id="dap-1r-Ymr"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HEQ-Sj-xmc">
-                                <rect key="frame" x="57" y="158" width="300" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="brP-da-nB0"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IjJ-iC-wPu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="0Wc-Q0-iUa" firstAttribute="leading" secondItem="zpL-pf-iar" secondAttribute="leading" id="5LU-nc-0kM"/>
-                            <constraint firstItem="yd0-Ep-A78" firstAttribute="centerX" secondItem="IjJ-iC-wPu" secondAttribute="centerX" id="Bd7-VA-gdH"/>
                             <constraint firstAttribute="bottom" secondItem="0Wc-Q0-iUa" secondAttribute="bottom" id="YPl-1O-ouz"/>
-                            <constraint firstItem="yd0-Ep-A78" firstAttribute="top" secondItem="IjJ-iC-wPu" secondAttribute="top" constant="34" id="YR2-Is-mGf"/>
-                            <constraint firstItem="HEQ-Sj-xmc" firstAttribute="centerX" secondItem="IjJ-iC-wPu" secondAttribute="centerX" id="kpN-fF-COo"/>
-                            <constraint firstItem="0Wc-Q0-iUa" firstAttribute="top" secondItem="zpL-pf-iar" secondAttribute="top" constant="200" id="q98-Db-Apg"/>
-                            <constraint firstItem="HEQ-Sj-xmc" firstAttribute="top" secondItem="IjJ-iC-wPu" secondAttribute="top" constant="70" id="tD5-MZ-Qqc"/>
+                            <constraint firstItem="0Wc-Q0-iUa" firstAttribute="top" secondItem="zpL-pf-iar" secondAttribute="top" id="q98-Db-Apg"/>
                             <constraint firstAttribute="trailing" secondItem="0Wc-Q0-iUa" secondAttribute="trailing" id="y35-e6-bkv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Jns-JY-IEK"/>
                     <connections>
                         <outlet property="tableview" destination="0Wc-Q0-iUa" id="8vY-Fj-OuM"/>
-                        <outlet property="textfield" destination="HEQ-Sj-xmc" id="Chk-nj-kuu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wrR-xb-clR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
