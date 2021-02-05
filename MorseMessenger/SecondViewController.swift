@@ -59,6 +59,7 @@ class SecondViewController:UIViewController{
     
     var engine: CHHapticEngine?
     var player: CHHapticPatternPlayer?
+    var timer:Timer?
 
     
     var tableViewRows:[MorseCell] = []{
@@ -109,6 +110,7 @@ class SecondViewController:UIViewController{
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        try? player?.cancel()
         pusher.disconnect()
     }
     func parsePusherEvent(_ eventData: String){
@@ -116,12 +118,13 @@ class SecondViewController:UIViewController{
         let pusherResponse = try! JSONDecoder().decode(PusherResponse.self, from: jsonData)
         let pusher_message = pusherResponse.message
         let message_array = pusher_message.components(separatedBy: "|")
-        tableViewRows.append(MorseCell(identifer: message_array[0], message: message_array[1]))
+        tableViewRows.append(MorseCell(identifer: message_array[0], message: message_array[1], isPlaying: false))
     }
     
-    func vibrateMessage(_ message: String){
+    func vibrateMessage(_ message: String, _ cellIndex:Int){
         guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else { return }
         try? player?.cancel()
+        timer?.invalidate()
         var morse_array:[CHHapticEvent]=[]
         var overallTime = 0.0
         for index in 0...message.count-1{
@@ -150,8 +153,16 @@ class SecondViewController:UIViewController{
         }
         do {
             let pattern = try CHHapticPattern(events: morse_array, parameters: [])
+            try engine?.start()
             player = try engine?.makePlayer(with: pattern)
+            timer = Timer.scheduledTimer(withTimeInterval: overallTime, repeats: false) { (Timer) in
+                self.tableViewRows[cellIndex].isPlaying = false
+            }
             try player?.start(atTime: 0)
+            for tableViewRowIndex in 0...tableViewRows.count-1{
+                tableViewRows[tableViewRowIndex].isPlaying = false
+            }
+            tableViewRows[cellIndex].isPlaying = true
         } catch {
             print("Failed to play pattern: \(error.localizedDescription).")
         }
@@ -166,18 +177,21 @@ extension SecondViewController:UITableViewDelegate,UITableViewDataSource{
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? SVCCell else{return UITableViewCell()}
         let currentCell = tableViewRows[indexPath.row]
         cell.delegate = self
-        cell.message = currentCell.message
+        cell.cellIndex = indexPath.row
         cell.identifier = currentCell.identifer
+        cell.isPlaying = currentCell.isPlaying
+        cell.message = currentCell.message
         return cell
     }
 }
 extension SecondViewController:SVCCellDelegate{
-    func buttonPressed(message:String) {
-        vibrateMessage(message)
+    func buttonPressed(message:String, cellIndex: Int) {
+        vibrateMessage(message, cellIndex)
     }
 }
 
 struct MorseCell{
     var identifer:String
     var message:String
+    var isPlaying:Bool
 }
