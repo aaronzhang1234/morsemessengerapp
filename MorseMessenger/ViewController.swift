@@ -11,20 +11,36 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var textfield: UITextField!
+
     
-    var counter = 0
     var input:String?
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
+        super.viewDidLoad()        
         let tap = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
 
        //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
        //tap.cancelsTouchesInView = false
 
        view.addGestureRecognizer(tap)
-   }
+       NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        
+       NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }
+
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
 
    //Calls this function when the tap is recognized.
    @objc func dismissKeyboard() {
@@ -32,8 +48,6 @@ class ViewController: UIViewController {
    }
     @IBAction func buttonOnClick(_ sender: Any) {
         input = textfield.text
-        counter = counter + 1
-        button.setTitle("Counter is: \(counter)", for: .normal)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let destination = segue.destination as? SecondViewController else{return}

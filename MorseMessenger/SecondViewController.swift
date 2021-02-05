@@ -53,11 +53,11 @@ class SecondViewController:UIViewController{
         "0": "-----",
         " ": " ",
     ]
-
     
     @IBOutlet weak var tableview: UITableView!
     
     var engine: CHHapticEngine?
+    var player: CHHapticPatternPlayer?
 
     
     var tableViewRows:[MorseCell] = []{
@@ -74,6 +74,7 @@ class SecondViewController:UIViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = .white
         let options = PusherClientOptions(
             host:.cluster("us2")
         )
@@ -103,6 +104,8 @@ class SecondViewController:UIViewController{
         } catch {
             print("There was an error creating the engine: \(error.localizedDescription)")
         }
+        self.view.backgroundColor = .white
+
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
@@ -112,37 +115,42 @@ class SecondViewController:UIViewController{
         let jsonData = eventData.data(using: .utf8)!
         let pusherResponse = try! JSONDecoder().decode(PusherResponse.self, from: jsonData)
         let pusher_message = pusherResponse.message
-        print(pusher_message)
         let message_array = pusher_message.components(separatedBy: "|")
         tableViewRows.append(MorseCell(identifer: message_array[0], message: message_array[1]))
     }
     
     func vibrateMessage(_ message: String){
         guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else { return }
+        try? player?.cancel()
         var morse_array:[CHHapticEvent]=[]
-        print(message)
         var overallTime = 0.0
         for index in 0...message.count-1{
             let message_letter = String(message[index])
             let morse_code = alphaNumToMorse[message_letter] ?? ""
-            print(morse_code)
             for morse_index in 0...morse_code.count-1{
                 let morse_character = morse_code[morse_index]
-                if(morse_character == "."){
+                switch(morse_character){
+                case ".":
                     morse_array.append(CHHapticEvent(eventType: .hapticContinuous, parameters: [], relativeTime: overallTime, duration:0.5))
                     overallTime += 0.6
-                }
-                if(morse_character == "-"){
+                    break
+                case "-":
                     morse_array.append(CHHapticEvent(eventType: .hapticContinuous, parameters: [], relativeTime: overallTime, duration:1.0))
                     overallTime += 1.1
+                    break
+                case " ":
+                    morse_array.append(CHHapticEvent(eventType: .audioContinuous, parameters: [], relativeTime: overallTime, duration:1.0))
+                    overallTime += 1.1
+                    break
+                default:
+                    break
                 }
             }
             overallTime += 0.5
-            
         }
         do {
             let pattern = try CHHapticPattern(events: morse_array, parameters: [])
-            let player = try engine?.makePlayer(with: pattern)
+            player = try engine?.makePlayer(with: pattern)
             try player?.start(atTime: 0)
         } catch {
             print("Failed to play pattern: \(error.localizedDescription).")

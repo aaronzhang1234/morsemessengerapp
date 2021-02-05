@@ -11,13 +11,12 @@ protocol SVCCellDelegate {
 }
 class SVCCell:UITableViewCell{
     @IBOutlet weak var button: UIButton!
-    @IBOutlet weak var identifierLabel: UILabel!
     
     var delegate:SVCCellDelegate?
     
     var identifier = "id"{
         didSet{
-            identifierLabel.text = identifier
+            button.setTitle(identifier, for: .normal)
         }
     }
     var message:String?
