@@ -54,6 +54,7 @@ class SecondViewController:UIViewController{
         " ": " ",
     ]
     
+    @IBOutlet weak var waiting: UILabel!
     @IBOutlet weak var tableview: UITableView!
     
     var engine: CHHapticEngine?
@@ -62,6 +63,7 @@ class SecondViewController:UIViewController{
     
     var tableViewRows:[MorseCell] = []{
         didSet{
+            waiting.isHidden = true
             tableview.reloadData()
         }
     }
@@ -74,7 +76,6 @@ class SecondViewController:UIViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .white
         let options = PusherClientOptions(
             host:.cluster("us2")
         )
@@ -104,7 +105,6 @@ class SecondViewController:UIViewController{
         } catch {
             print("There was an error creating the engine: \(error.localizedDescription)")
         }
-        self.view.backgroundColor = .white
 
     }
     override func viewWillDisappear(_ animated: Bool) {

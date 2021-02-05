@@ -81,6 +81,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waiting for messages" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yw9-kW-ofD">
+                                <rect key="frame" x="0.0" y="200" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IjJ-iC-wPu"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -95,6 +102,7 @@
                     <navigationItem key="navigationItem" id="Jns-JY-IEK"/>
                     <connections>
                         <outlet property="tableview" destination="0Wc-Q0-iUa" id="8vY-Fj-OuM"/>
+                        <outlet property="waiting" destination="yw9-kW-ofD" id="02a-Fy-Yvp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wrR-xb-clR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
